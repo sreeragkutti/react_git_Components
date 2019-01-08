@@ -27,6 +27,7 @@ class Body extends React.Component{
             <React.Fragment>
                 <div className="container">
                     <div className="row main">
+                    <h1>sample head by sunod</h1>
                          <Form/>
                     </div>
                 </div>
