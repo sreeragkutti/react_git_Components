@@ -10,7 +10,7 @@ class Body extends React.Component{
             }
     onSubmit = ()=>{
         debugger;
-        alert(JSON.stringify("Name is :"+this.state.Name+" address is :"+this.state.Address));
+        alert(JSON.stringify("Name is :"+this.state.Name+" Address is :"+this.state.Address));
     }
 
     onNameChange = (e: React.FormEvent<HTMLInputElement>) => {
