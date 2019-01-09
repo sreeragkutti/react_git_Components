@@ -33,6 +33,9 @@ class Body extends React.Component{
                 <div>
                     <h1>just testing..................>>>></h1>
                 </div>
+                <div>
+                    <h2>Hello world.....</h2>
+                </div>
                 {/* <div classNameName="sample-body">
                     <p>Registration form</p>
                     <Tb text="Name"  onTextChange={this.onNameChange}/>
