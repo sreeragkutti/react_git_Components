@@ -10,7 +10,7 @@ class Body extends React.Component{
             }
     onSubmit = ()=>{
         debugger;
-        alert(JSON.stringify("Name is :"+this.state.Name+" Address is :"+this.state.Address));
+        alert(JSON.stringify("Name is :"+this.state.Name+" Address is ---:"+this.state.Address));
     }
 
     onNameChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -29,6 +29,12 @@ class Body extends React.Component{
                     <div className="row main">
                          <Form/>
                     </div>
+                </div>
+                <div>
+                    <h1>just testing..................>>>></h1>
+                </div>
+                <div>
+                    <h2>Hello world.....</h2>
                 </div>
                 {/* <div classNameName="sample-body">
                     <p>Registration form</p>
