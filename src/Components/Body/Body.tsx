@@ -31,7 +31,7 @@ class Body extends React.Component{
                     </div>
                 </div>
                 <div>
-                    <h1>just testing....................>>>></h1>
+                    <h1>just testing..................>>>></h1>
                 </div>
                 {/* <div classNameName="sample-body">
                     <p>Registration form</p>
