@@ -20,7 +20,7 @@ class App extends Component {
 
     return (
       <div className="App" style={divStyle}>
-        {/* <SampleClassComponent Age={25} Name="sreeragkkkkkkkkkkkkkkkk" />
+        {/* <SampleClassComponent Age={25} Name="sreeragkkkkkk" />
         <SampleFunctionalComp Text="sreerag" age={25}>Hello</SampleFunctionalComp>
         <SampleFunctionalComp2 Name="Sample name" Age={25}/> */}
         <Header/>
