@@ -29,7 +29,14 @@ class App extends Component {
       //   <Footer/>
       // </div>
       <div className="App" style={divStyle}>
+        {/* <SampleClassComponent Age={25} Name="sreeragkkk" />
+        <SampleFunctionalComp Text="sreerag" age={25}>Hello</SampleFunctionalComp>
+        <SampleFunctionalComp2 Name="Sample name" Age={25}/> */}
+        <Header/>
+        <Body/>
+        <Footer/>
         <PureComponentSample/>
+
       </div>
     );
   }
