@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import SampleClassComponent from './ClassComponent/testClassComp'
 import SampleFunctionalComp2, {SampleFunctionalComp } from './FunctionalComp/SampleFunctionalComponent'
+import PureComponentSample from './Components/PureComponent/PureComponent'
 
 
 
@@ -19,13 +20,16 @@ class App extends Component {
     }
 
     return (
+      // <div className="App" style={divStyle}>
+      //   {/* <SampleClassComponent Age={25} Name="sreeragkkkkkkkkkkkkkkkk" />
+      //   <SampleFunctionalComp Text="sreerag" age={25}>Hello</SampleFunctionalComp>
+      //   <SampleFunctionalComp2 Name="Sample name" Age={25}/> */}
+      //   <Header/>
+      //   <Body/>
+      //   <Footer/>
+      // </div>
       <div className="App" style={divStyle}>
-        {/* <SampleClassComponent Age={25} Name="sreeragkkkkkkkkkkkkkkkk" />
-        <SampleFunctionalComp Text="sreerag" age={25}>Hello</SampleFunctionalComp>
-        <SampleFunctionalComp2 Name="Sample name" Age={25}/> */}
-        <Header/>
-        <Body/>
-        <Footer/>
+        <PureComponentSample/>
       </div>
     );
   }
