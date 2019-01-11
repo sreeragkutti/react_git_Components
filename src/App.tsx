@@ -9,6 +9,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import SampleClassComponent from './ClassComponent/testClassComp'
 import SampleFunctionalComp2, {SampleFunctionalComp } from './FunctionalComp/SampleFunctionalComponent'
 import PureComponentSample from './Components/PureComponent/PureComponent'
+import ClockApp from './Components/PureComponent/Time'
 
 
 
@@ -29,7 +30,8 @@ class App extends Component {
       //   <Footer/>
       // </div>
       <div className="App" style={divStyle}>
-        <PureComponentSample/>
+        {/* <PureComponentSample/> */}
+        <ClockApp/>
       </div>
     );
   }
