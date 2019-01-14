@@ -18,12 +18,23 @@ class One extends React.Component<any,any>{
     }
 }
 
-class Two extends React.Component{
+class Two extends React.Component<any,any>{
+    state = {
+        nextUrl:"/one/1500"
+    }
+    constructor(props:any){
+        super(props);
 
+    }
+
+    onBtnClick = ()=>{
+        this.props.history.push(this.state.nextUrl);
+    }
     render(){
         return(
             <div>
                 <h2>Two</h2>
+                <button onClick={this.onBtnClick}>Click to navigate</button>
             </div>
         )
     }

@@ -57,6 +57,7 @@ class App extends Component {
           <li><Link to="/one/120">One</Link></li>
           <li><Link to="/two">Two</Link></li>
           <li><Link to="/three">Three</Link></li>
+          <li><Link to="/one/5500">_Three</Link></li>
         </ul>
 
         <Route component={Body} path="/body"/>
@@ -68,6 +69,9 @@ class App extends Component {
         <Route component={RComp.One} path="/one/:id"/>
         <Route component={RComp.Two} path="/two"/>
         <Route component={RComp.Three} path="/three"/>
+        <Route Render={(props:any)=>{
+        <RComp.Two/>
+      }} path="/one/:id"/>
       </div>
     );
   }
