@@ -31,9 +31,7 @@ class PureComponentSample extends React.Component{
     }
 componentDidMount(){
     setInterval(()=>{
-        // let _val = this.state.val
-        //     _val.min=100;
-        //     _val.sec=200;
+       
         this.setState(()=>{
             return {
                 val:{min:this.state.val.min+1}
@@ -57,7 +55,8 @@ componentDidMount(){
             <div>
                 <h2>Welcome to pure components.....</h2>
                 <h2>{this.state.val.min}</h2>
-                <Msg val={0}/>
+                <Msg val={this.state.val.sec}/>
+                
             </div>
         )
     }
