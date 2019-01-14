@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const Hrs = (props:any)=> {
     console.log("Hours");
@@ -10,4 +10,5 @@ const Hrs = (props:any)=> {
 
 }
 
-export default Hrs;
+// export default Hrs;
+export default memo(Hrs);

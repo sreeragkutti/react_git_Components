@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 
 const Min = (props:any)=>{
@@ -8,4 +8,5 @@ const Min = (props:any)=>{
     )
 }
 
-export default Min;
+// export default Min;
+export default memo(Min);

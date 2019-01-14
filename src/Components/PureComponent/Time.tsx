@@ -3,11 +3,12 @@ import Min from './Min'
 import Sec from './Sec'
 import Hrs from './Hrs'
 
-class Clock extends React.Component{
+class Clock extends React.PureComponent{
     state = {
         min:0,
         sec:0, 
-        hrs:0
+        hrs:0,
+        day:"sun"
     }
     componentDidMount(){
         setInterval(()=>{
@@ -40,6 +41,7 @@ class Clock extends React.Component{
                     sec:_sec,
                     min:_min,
                     hrs:_hrs
+                    // day:"mon"
                     
                 }
             });

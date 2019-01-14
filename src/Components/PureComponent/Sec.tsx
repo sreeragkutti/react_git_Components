@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const Sec = (props:any)=>{
     console.log("Second");
@@ -9,4 +9,5 @@ const Sec = (props:any)=>{
     )
 }
 
-export default Sec;
+// export default Sec;
+export default memo(Sec);
