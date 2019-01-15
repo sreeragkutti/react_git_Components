@@ -5,7 +5,7 @@ const DisplayWeather = (props:any)=>{
         border:"1px solid",
         width:"50%",
         boxShadow:"1px 1px #ccc",
-        marginLeft:"25%"
+        marginLeft:"24%"
     }
     return(
         <div>
