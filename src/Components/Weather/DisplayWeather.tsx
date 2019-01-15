@@ -30,4 +30,4 @@ const DisplayWeather = (props:any)=>{
 }
 
 
-export default DisplayWeather
+export default DisplayWeather;
