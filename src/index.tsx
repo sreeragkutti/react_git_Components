@@ -19,8 +19,11 @@ serviceWorker.unregister();
 
 // Some usefull git commands
 // ---------------------------------------------------
-// git add 
+// git add --all
 // git commit -m "description of your commit" 
+// git push origin your_new_branch 
+
+//-----------------------------------------------------
 // git push origin MyNewBranch 
 // git checkout -b MyNewBranch 
 // git add -p 
