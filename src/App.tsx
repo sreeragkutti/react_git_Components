@@ -15,6 +15,8 @@ import {Link} from 'react-router-dom';
 
 import RComp from './Components/Routing/RComponents'
 import Weather from './Components/Weather/WeatherApp'
+import Users from './Components/GetUsers/Users';
+import RegForm from './Components/RegForm/RegForm'
 
 
 
@@ -59,6 +61,9 @@ class App extends Component {
           <li><Link to="/two">Two</Link></li>
           <li><Link to="/three">Three</Link></li>
           <li><Link to="/weather">Click here to see the weather details</Link></li>
+          <li><Link to="/users">Users</Link></li>
+
+          <li><Link to="/users_registration">User registartion</Link></li>
           
         </ul>
 
@@ -72,6 +77,9 @@ class App extends Component {
         <Route component={RComp.Two} path="/two"/>
         <Route component={RComp.Three} path="/three"/>
         <Route component={Weather} path="/weather"/>
+        <Route component={Users} path="/users"/>
+
+        <Route component={RegForm} path="/users_registration"/>
       
       </div>
     );
