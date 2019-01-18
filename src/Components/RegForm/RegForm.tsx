@@ -1,27 +1,23 @@
 import React from 'react'
-import Textbox from './Textbox'
-import Label from './Label'
-import Button from './Button';
+import BasicForm from './BasicForm'
 
 class RegForm extends React.Component<any,any>{
     constructor(props:any){
         super(props);
     }
 
+    submitForm = (event:any)=>{
+        event.preventDefault();
+        const name = event.target.name.value;
+        const age = event.target.age.value;
+        const address = event.target.age.value;
+        console.log(name,age,address);
+    }
     render(){
 
         return(
             <div>
-                <h4>Registration form</h4>
-                <form>
-                    <Label text="Name"/>
-                    <Textbox val={0} type="text"/>
-                    <Label text="Age"/>
-                    <Textbox val={0} type="text"/>
-                    <Label text="Address"/>
-                    <Textbox val={0} type="text"/>
-                    <Button text="Register"/>
-                </form>
+                <BasicForm onSubmit={this.submitForm} />
             </div>
         )
     }

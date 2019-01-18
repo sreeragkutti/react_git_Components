@@ -51,15 +51,16 @@ class Weather extends React.Component<any,any>{
         }
         return(
             <div>
-                <h2>.......Weather status.......</h2>
+                <h2 id="weatherAppHeading">.......Weather status.......</h2>
                 <div>
                     <form onSubmit={this.getWeather}>
-                        <div><input type="text" name="country" placeholder="Country..."/></div>
-                        <div><input type="text" name="city" placeholder="City..."/></div>
-                        <button>Get Weather</button>
+                        <div><input type="text" id="countryName" name="country" placeholder="Country..."/></div>
+                        <div><input type="text" id="cityName" name="city" placeholder="City..."/></div>
+                        <button id="btnGetWeather">Get Weather</button>
                     </form>
-                    <div><div style={lblRed}>{this.state.Error}</div></div>
+                    <div><div style={lblRed} id="weatherAppError">{this.state.Error}</div></div>
                     <div>
+                        <span id="spWeatherDetails">Weather Details</span>
                         <DisplayWeather country={this.state.Country} city={this.state.City} description={this.state.Description}/>
                     </div>
                 </div>

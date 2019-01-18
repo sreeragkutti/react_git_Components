@@ -3,7 +3,7 @@ import React from 'react'
 const Textbox = (props:any)=>{
     return(
         <div>
-            <input type={props.type} value={props.val}/>
+            <input type={props.type}  name={props.name}/>
         </div>
     )
 }
