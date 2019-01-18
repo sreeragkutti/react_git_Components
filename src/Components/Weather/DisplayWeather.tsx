@@ -11,8 +11,9 @@ const DisplayWeather = (props:any)=>{
         <div>
         {props.country && props.city 
         ?   <div style={divStyle}>
+                
                 {props.country != undefined 
-                ? <span>Country: {props.country}</span>
+                ?<div><span id="spWeatherDetails">Weather Details</span> <span>Country: {props.country}</span></div>
                 : ""}
                 <br/>
                 {props.city != undefined 

@@ -60,7 +60,7 @@ class Weather extends React.Component<any,any>{
                     </form>
                     <div><div style={lblRed} id="weatherAppError">{this.state.Error}</div></div>
                     <div>
-                        <span id="spWeatherDetails">Weather Details</span>
+                        
                         <DisplayWeather country={this.state.Country} city={this.state.City} description={this.state.Description}/>
                     </div>
                 </div>
